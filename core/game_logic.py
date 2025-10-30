@@ -11,6 +11,24 @@ def calculate_hand_value(hand: list[dict]) -> int:
 
 def deal_two_each(deck: list[dict], player: dict, dealer: dict) -> None:
 
+    card1 = deck.pop(0)
+    card2 = deck.pop(0)
+    card3 = deck.pop(0)
+    card4 = deck.pop(0)
+
+    player.update(card1)
+    player.update(card2)
+    dealer.update(card3)
+    dealer.update(card4)
+
+    print(f"hand player: {player}, hand dealer: {dealer}.")
+
+
+
+
+
+
+
 
 
 def dealer_play(deck: list[dict], dealer: dict) -> bool:
