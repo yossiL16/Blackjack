@@ -38,6 +38,3 @@ def dealer_play(deck: list[dict], dealer: dict) -> bool:
         print("The dealer has finished his turn. ")
         return True
 
-
-
-
