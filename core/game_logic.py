@@ -15,10 +15,10 @@ def deal_two_each(deck: list[dict], player: dict, dealer: dict) -> None:
     card3 = deck.pop(0)
     card4 = deck.pop(0)
 
-    player.update(card1)
-    player.update(card2)
-    dealer.update(card3)
-    dealer.update(card4)
+    player["hand"].append(card1)
+    player["hand"].append(card2)
+    dealer["hand"].append(card3)
+    dealer["hand"].append(card4)
 
     print(f"hand player: {player}, hand dealer: {dealer}.")
 
