@@ -14,7 +14,7 @@ def build_standard_deck() -> list[dict]:
 
 def shuffle_by_suit(deck: list[dict], swaps: int = 5000) -> list[dict]:
 
-    for i in range(5000):
+    for i in range(swaps):
         while True:
             random_number_1 = random.randint(0, 51)
             random_number_2 = random.randint(0, 51)

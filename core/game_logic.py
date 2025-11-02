@@ -29,7 +29,7 @@ def dealer_play(deck: list[dict], dealer: dict) -> bool:
     while True:
         if not sum_diler <= 17:
             card1 = deck.pop(0)
-            sum_diler += card1
+            sum_diler += int(card1["rank"])
         break
     if sum_diler > 21:
         print("Disqualified")

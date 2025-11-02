@@ -18,8 +18,9 @@ def run_full_game(deck: list[dict], player: dict, dealer: dict) -> None:
         chois_player = ask_player_action()
         if chois_player == "H":
             card = deck.pop(0)
-            player.update(card)
+            player["hand"].append(card)
             sum_player = calculate_hand_value(player["hand"])
+            print("player sum:", sum_player)
             if sum_player > 21:
                 print("The player is disqualified.")
                 print("The dealer won!!!")
